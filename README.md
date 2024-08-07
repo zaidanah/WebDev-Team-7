@@ -13,6 +13,7 @@ Discover Indonesia's natural beauty with 7SUMMIT and join a community of mountai
 + **Content Management by Admin**: Admins have CRUD (Create, Read, Update, Delete) capabilities to enter and manage information about mountains, ensuring content is always current and accurate.
 
 ### Preview
+![7SummitPreview-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/80283eb1-28fa-4792-95ae-98bca2794db4)
 
 ---
 
