@@ -1,492 +1,484 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif; /* Default font Poppins */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 #navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Agar navbar berada di atas elemen lain */
-    background-color: #162114;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #162114;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 #navbar a img {
-    height: 40px;
-    margin-left: 20px;
+  height: 40px;
+  margin-left: 20px;
 }
 
 #navbar.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Membuat navbar tetap di atas elemen lain */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-right: 20px;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
 }
 
 .nav-links li {
-    margin: 0 15px;
-    position: relative;
+  margin: 0 15px;
+  position: relative;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    padding: 4px 0;
-    display: inline-block;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding: 4px 0;
+  display: inline-block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 .nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background-color: white;
-    bottom: 1px;
-    left: 50%;
-    transition: width 0.3s ease, left 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  bottom: 1px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 .nav-links a:hover::after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 #hero {
-    background: url('images/bghero.png') no-repeat center center/cover;
-    height: 100vh; /* Sesuaikan tinggi sesuai kebutuhan */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align kiri */
-    color: white;
-    padding: 0 60px; /* Menambahkan padding untuk menggeser konten ke kiri */
-    text-align: left;
-    flex-direction: column
+  background: url("images/bghero.png") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left; 
+  color: white;
+  padding: 0 60px;
+  text-align: left; 
 }
 
 .hero-content {
-    margin-top: 50%;
-    max-width: 800px; /* Sesuaikan lebar maksimal konten */
+  max-width: 800px;
 }
 
 .hero-content h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
-    text-align: left;
-    margin-bottom: 20px;
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px; /* Sama dengan size paragraf pada explore more */
-    line-height: 1.5;
-    margin-bottom: 20px; /* Jarak antara paragraf dan button */
+  font-family: "Poppins";
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .explore-button {
-    width: 312px;
-    height: 72px;
-    background-color: #EB3D00; /* Warna background tombol */
-    color: #fff; /* Warna teks tombol */
-    border: none;
-    border-radius: 35px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px; /* Ukuran font button */
-    cursor: pointer;
-    margin-top: 20px; /* Memberikan jarak antara paragraf dan tombol */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 312px;
+  height: 72px;
+  background-color: #eb3d00;
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .explore-button:hover {
-    background-color: #EE815B; /* Warna saat hover */
-    transform: scale(1.05); /* Efek zoom sedikit saat hover */
+  background-color: #ee815b;
+  transform: scale(1.05);
 }
 
 #explore-now {
-    background-color: #fff;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .explore-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .explore-text {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .explore-text h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
-    text-align: left;
-    margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .explore-text p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: #000;
 }
 
 .search-bar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .search-button {
-    display: flex;
-    align-items: center;
-    padding: 12px 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background-color: #EB3D00;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #eb3d00;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .search-button:hover {
-    background-color: #EE815B;
+  background-color: #ee815b;
 }
 
 .search-icon {
-    width: 20px; /* Ukuran ikon pencarian */
-    height: 20px;
-    margin-right: 10px; /* Jarak antara ikon dan teks */
+  width: 20px; 
+  height: 20px;
+  margin-right: 10px; 
 }
 
 .see-more {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #162114;
-    text-decoration: underline;
-    margin-left: auto; /* Memindahkan tulisan ke kanan */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #162114;
+  text-decoration: underline;
+  margin-left: auto; 
 }
 
 .see-more:hover {
-    color: #EE815B;
+  color: #ee815b;
 }
 
 .card-carousel {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .card-container {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
 }
 
 .card {
-    flex: 0 0 33.333%;
-    max-width: 15%;
-    background-color: #294122;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
+  flex: 0 0 33.333%;
+  max-width: 15%;
+  background-color: #294122;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .card:hover {
-    background-color: #638A57;
+  background-color: #638a57;
 }
 
 .card img {
-    width: 351px;
-    height: 214px;
-    border-radius: 20px 20px 0 0;
+  width: 351px;
+  height: 214px;
+  border-radius: 20px 20px 0 0;
 }
 
 .card-text {
-    padding: 20px;
-    text-align: left;
+  padding: 20px;
+  text-align: left;
 }
 
 .card-text h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 32px;
-    margin: 0;
-    color: #fff
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 32px;
+  margin: 0;
+  color: #fff;
 }
 
 .card-text p {
-    font-family: 'Poppins', sans-serif;
-    margin: 5px 0;
-    color: #fff
+  font-family: "Poppins", sans-serif;
+  margin: 5px 0;
+  color: #fff;
 }
 
 .card-text p:nth-of-type(1) {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .card-text p:nth-of-type(2) {
-    font-size: 10px;
-    color: #ccc;
+  font-size: 10px;
+  color: #ccc;
 }
 
 .carousel-btn {
-    background-color: #EB3D00;
-    border: none;
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+  background-color: #eb3d00;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 .prev-btn {
-    left: -40px;
+  left: -40px;
 }
 
 .next-btn {
-    right: -40px;
+  right: -40px;
 }
 
 #about-us {
-    margin-top: 10%;
-    background: url('images/bgabout.png') no-repeat center center/cover; /* Background image */
-    padding: 60px 20px;
-    text-align: center;
+  margin-top: 10%;
+  background: url("images/bgabout.png") no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .about-content h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
-    color: #fff; /* Warna teks heading */
-    margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px;
+  color: #fff; 
+  margin-bottom: 20px;
 }
 
 .about-content p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #fff; /* Warna teks paragraf */
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 40px; /* Centering and spacing */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px; 
 }
 
 #about-us .card {
-    background-color: #EB3D00; /* Warna card about us */
-    width: 357px;
-    height: 357px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    border-radius: 15px;
-    color: white;
-    margin: 10px; /* Menambahkan margin untuk memberi jarak */
+  background-color: #eb3d00; 
+  width: 357px;
+  height: 357px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+  margin: 10px; 
 }
 
 #about-us .card-icon {
-    width: 60px; /* Sesuaikan ukuran ikon */
-    margin-bottom: 20px;
+  width: 60px; 
+  margin-bottom: 20px;
 }
 
 #about-us .card h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #162114
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #162114;
 }
 
 #about-us .card p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #162114;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #162114;
 }
 
 #community {
-    margin-top: 10%;
-    display: flex;
-    align-items: center;
-    padding: 60px;
-    background-color: #fff; /* Latar belakang putih untuk section */
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background-color: #fff; 
 }
 
 .community-container {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .community-image img {
-    width: 100%; /* Sesuaikan ukuran gambar dengan kolom kiri */
-    max-width: 500px; /* Batasan ukuran maksimal gambar */
-   
+  width: 100%; 
+  max-width: 500px; 
 }
 
 .community-content {
-    max-width: 600px; /* Atur lebar maksimal untuk konten */
+  max-width: 600px;
 }
 
 .community-content h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
-    color: #EB3D00; /* Warna heading */
-    text-align: left;
-    margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px;
+  color: #eb3d00; 
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .community-content p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    color: #000;
-    text-align: left;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .join-button {
-    width: 312px;
-    height: 64px;
-    background-color: #294122; /* Warna tombol */
-    color: #fff;
-    border: none;
-    border-radius: 35px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 312px;
+  height: 64px;
+  background-color: #294122; 
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .join-button:hover {
-    background-color: #638A57; /* Warna saat hover */
-    transform: scale(1.05); /* Efek zoom saat hover */
+  background-color: #638a57; 
+  transform: scale(1.05);
 }
 
 #footer {
-    background-color: #162114; /* Warna latar footer */
-    padding: 40px 40px;
-    text-align: center;
-    color: #fff;
+  background-color: #162114; 
+  padding: 40px 40px;
+  text-align: center;
+  color: #fff;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px; /* Memberikan jarak antara konten dan copyright */
-    flex-wrap: wrap; /* Agar tetap rapi pada ukuran layar kecil */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; 
+  flex-wrap: wrap; 
 }
 
 .footer-logo img {
-    max-width: 100px; /* Sesuaikan ukuran logo */
+  max-width: 100px; 
 }
 
 .footer-links {
-    display: flex;
-    gap: 20px; /* Jarak antara link */
+  display: flex;
+  gap: 20px;
 }
 
 .footer-links a {
-    font-size: 12px;
-    color: #fff;
-    text-decoration: underline;
-    transition: color 0.3s ease;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #EB3D00; /* Warna link saat dihover */
+  color: #eb3d00;
 }
 
 .footer-social {
-    display: flex;
-    gap: 15px; /* Jarak antar ikon */
+  display: flex;
+  gap: 15px; 
 }
 
 .social-icon {
-
-    background-size: cover;
-    transition: background-image 0.3s ease;
+  background-size: cover;
+  transition: background-image 0.3s ease;
 }
 
-/* Icon YouTube */
 .youtube-icon {
-    width: 26px; /* Sesuaikan ukuran ikon */
-    height: 20px;
-    background-image: url('images/iconyt.png');
+  width: 26px;
+  height: 20px;
+  background-image: url("images/iconyt.png");
 }
 
 .youtube-icon:hover {
-    background-image: url('images/iconythover.png');
+  background-image: url("images/iconythover.png");
 }
 
-/* Icon Instagram */
 .instagram-icon {
-    width: 20px; /* Sesuaikan ukuran ikon */
-    height: 20px;
-    background-image: url('images/iconig.png');
+  width: 20px; 
+  height: 20px;
+  background-image: url("images/iconig.png");
 }
 
 .instagram-icon:hover {
-    background-image: url('images/iconighover.png');
+  background-image: url("images/iconighover.png");
 }
 
-/* Icon Twitter */
 .twitter-icon {
-    width: 20px; /* Sesuaikan ukuran ikon */
-    height: 20px;
-    background-image: url('images/icontwitter.png');
+  width: 20px; 
+  height: 20px;
+  background-image: url("images/icontwitter.png");
 }
 
 .twitter-icon:hover {
-    background-image: url('images/icontwitterhover.png');
+  background-image: url("images/icontwitterhover.png");
 }
 
 .footer-copy {
-    font-size: 12px;
-    color: #fff;
-    margin-top: 10px;
-    text-align: center;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
 }
 
 #search-bar {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    margin-bottom: 20px;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-bottom: 20px;
 }
