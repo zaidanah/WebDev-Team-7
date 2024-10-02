@@ -18,7 +18,7 @@ Discover Indonesia's natural beauty with 7SUMMIT and join a community of mountai
 ---
 
 ## Our Team
-+ [Favian Revaldy](https://github.com/lukarukikato) [FAV]
++ [Muhammad Favian Revaldy](https://github.com/lukarukikato) [FAV]
   > Frontend Developer 
 + [Zaidan Abdurrahman Hakim](https://github.com/zaidanah) [DUN]
   > Backend Developer
